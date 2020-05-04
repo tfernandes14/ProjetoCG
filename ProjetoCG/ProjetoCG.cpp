@@ -22,19 +22,19 @@ GLfloat tam = 0.5;
 GLfloat distX = 6;
 GLfloat distZ = 3;
 GLfloat altPernas = 1;
-GLfloat altTampo = 0.1;
+GLfloat altTampo = 0.001;
 
 static GLfloat verticesPernas[] = {
 	//�������������������������������������� x=tam (Esquerda)
-		-tam,  -tam,  tam,	// 0 
-		-tam,   tam + altPernas,  tam,	// 1 
-		-tam,   tam + altPernas, -tam,	// 2 
-		-tam,  -tam, -tam,	// 3 
+		-tam,  0,  tam,	// 0 
+		-tam,  tam + altPernas,  tam,	// 1 
+		-tam,  tam + altPernas, -tam,	// 2 
+		-tam,  0, -tam,	// 3 
 	//�������������������� Direita
-		 tam,  -tam,  tam,	// 4 
-		 tam,   tam + altPernas,  tam,	// 5 
-		 tam,   tam + altPernas, -tam,	// 6 
-		 tam,  -tam, -tam,	// 7 
+		 tam,  0,  tam,	// 4 
+		 tam,  tam + altPernas,  tam,	// 5 
+		 tam,  tam + altPernas, -tam,	// 6 
+		 tam,  0, -tam,	// 7 
 	//��������������������� (Cima
 		-tam,  tam + altPernas,  tam,	// 8 
 		-tam,  tam + altPernas, -tam,	// 9 
@@ -153,15 +153,16 @@ static GLuint trasTampo[] = { 3, 2, 6, 7 };
 
 //------------------------------------------------------------ Objectos (sistema coordenadas)
 GLint		wScreen = 800, hScreen = 600;			//.. janela (pixeis)
-GLfloat		xC = 10.0, yC = 10.0, zC = 10.0;		//.. Mundo  (unidades mundo)
+GLfloat		xC = 15.0, yC = 15.0, zC = 15.0;		//.. Mundo  (unidades mundo)
 
 //------------------------------------------------------------ Visualizacao/Observador 
-GLfloat  rVisao = 10, aVisao = 0.5 * PI, incVisao = 0.05;
-GLfloat  obsP[] = { rVisao * cos(aVisao), 3.0, rVisao * sin(aVisao) };
+GLfloat  rVisao = 5.0, aVisao = 0.5 * PI, incVisao = 0.25;
+GLfloat  obsPini[] = { 1, 4.0, 0.5 * xC };
+GLfloat  obsPfin[] = { obsPini[0] - rVisao * cos(aVisao), obsPini[1], obsPini[2] - rVisao * sin(aVisao)};
 GLfloat  translateZ[] = { 0, 0, 0 };
 GLfloat  translateX[] = { 0, 0, 0 };
 GLfloat  rotateTudo[] = {0, 0, 1, 0};
-GLfloat  angZoom = 90;
+GLfloat  angPersp = 90;
 GLfloat  incZoom = 3;
 GLint   msec = 20;						//.. definicao do timer (actualizacao)
 GLboolean  anim = false;
@@ -171,16 +172,46 @@ GLint incrementDir = 2;
 GLint incrementEsq = -2;
 GLfloat incrementX = 0.02;
 
+// -------------------------------------------------------------- Iluminacao - Ambiente
+GLint   Dia = 1;     //:::   'D'  
+GLfloat luzGlobalCorAmb[4] = { 1.0, 1.0, 1.0, 1.0 };   // 
+
+// -------------------------------------------------------------- Iluminacao - Teto
+GLint luzTeto = 1;	// 'T'
+GLfloat intensidadeT = 0.3;  //:::   'I'  
+GLint luzR = 1;		// 'R'
+GLint luzG = 1;		// 'G'
+GLint luzB = 1;		// 'B'
+GLfloat localPos[4] = { 0, 10.0, 0, 1.0 };				// no teto
+GLfloat localCorAmb[4] = { luzR, luzG, luzB, 1.0 };
+GLfloat localCorDif[4] = { luzR, luzG, luzB, 1.0 };
+GLfloat localCorEsp[4] = { luzR, luzG, luzB, 1.0 };
+
 //================================================================================
 //=========================================================================== INIT
-void inicializa(void)
-{
-	glClearColor(BLACK);		//………………………………………………………………………………Apagar
-	glEnable(GL_DEPTH_TEST);	//………………………………………………………………………………Profundidade
-	glShadeModel(GL_SMOOTH);	//………………………………………………………………………………Interpolacao de cores	
+void initLights(void) {
+	//…………………………………………………………………………………………………………………………………………… Ambiente
+	glLightModelfv(GL_LIGHT_MODEL_AMBIENT, luzGlobalCorAmb);
+	//…………………………………………………………………………………………………………………………………………… Teto
+	glLightfv(GL_LIGHT0, GL_POSITION, localPos);
+	glLightfv(GL_LIGHT0, GL_AMBIENT, localCorAmb);
+	glLightfv(GL_LIGHT0, GL_DIFFUSE, localCorDif);
+	glLightfv(GL_LIGHT0, GL_SPECULAR, localCorEsp);
+}
 
-	glEnable(GL_CULL_FACE);		//………………………………………………………………………………Faces visiveis
-	glCullFace(GL_BACK);		//………………………………………………………………………………Mostrar so as da frente
+void inicializa(void){
+	glClearColor(0, 0, 0, 1);		//………………………………………………………………………………Apagar
+	glShadeModel(GL_SMOOTH);	//………………………………………………………………………………Interpolacao de cores	
+	glEnable(GL_DEPTH_TEST);	//………………………………………………………………………………Profundidade
+	glEnable(GL_NORMALIZE);	//………………………………………………………………………………Profundidade
+
+	glEnable(GL_LIGHTING);
+	glEnable(GL_LIGHT0);
+
+	initLights();
+
+	/*glEnable(GL_CULL_FACE);		//………………………………………………………………………………Faces visiveis
+	glCullFace(GL_BACK);		//………………………………………………………………………………Mostrar so as da frente*/
 }
 
 
@@ -474,7 +505,7 @@ void desenhaTampo() {
 }
 
 
-void drawScene() {
+void drawMesa() {
 
 	//=================================================== Qual o lado visivel ???
 	if (frenteVisivel)
@@ -505,14 +536,23 @@ void drawScene() {
 	glPushMatrix();
 		desenhaTampo();
 	glPopMatrix();
+}
 
-	//==================================== Chaleira Amarela
-	glColor4f(YELLOW);
+void drawChao() {
 	glPushMatrix();
-		//?? escala, rotacao, translacao ??
-		//glutWireTeapot(1);
+	glTranslatef(4, 0, 0);
+		glBegin(GL_QUADS);
+			glTexCoord2f(0.0f, 0.0f);  		glVertex3i(-xC, 0, -xC);
+			glTexCoord2f(1.0, 0.0); 		glVertex3i(-xC, 0, xC);
+			glTexCoord2f(1.0, 1.0);			glVertex3i(xC, 0, xC);
+			glTexCoord2f(0.0, 1.0);			glVertex3i(xC, 0, -xC);
+		glEnd();
 	glPopMatrix();
+}
 
+void iluminacao() {
+	if (luzTeto)		glEnable(GL_LIGHT0);
+	else				glDisable(GL_LIGHT0);
 }
 
 void display(void) {
@@ -525,19 +565,42 @@ void display(void) {
 	glViewport(0, 0, wScreen, hScreen);
 	glMatrixMode(GL_PROJECTION);
 	glLoadIdentity();
-	gluPerspective(angZoom, (float) wScreen / hScreen, 0.1, 3 * zC);
+	gluPerspective(angPersp, (float) wScreen / hScreen, 0.1, 100.0);
 	glMatrixMode(GL_MODELVIEW);
 	glLoadIdentity();
-	gluLookAt(obsP[0], obsP[1], obsP[2], 0, 0, 0, 0, 1, 0);
+	gluLookAt(obsPini[0], obsPini[1], obsPini[2], obsPfin[0], obsPfin[1], obsPfin[2], 0, 1, 0);
 	//================================================================= Não modificar !!!!!!!!!!!!
 	   
 
 	//…………………………………………………………………………………………………………………………………………………………Objectos
+	iluminacao();
+	drawChao();
 	drawEixos();
-	drawScene();
+	drawMesa();
 	
 	//. . . . . . . . . . . . . . . . . . . . .  Actualizacao
 	glutSwapBuffers();
+}
+
+void updateVisao() {
+	obsPfin[0] = obsPini[0] + rVisao * cos(aVisao);
+	obsPfin[2] = obsPini[2] - rVisao * sin(aVisao);
+	glutPostRedisplay();
+}
+
+void updateLuz() {
+	localCorAmb[0] = luzR * intensidadeT;
+	localCorAmb[1] = luzG * intensidadeT;
+	localCorAmb[2] = luzB * intensidadeT;
+	localCorDif[0] = luzR * intensidadeT;
+	localCorDif[1] = luzG * intensidadeT;
+	localCorDif[2] = luzB * intensidadeT;
+	localCorEsp[0] = luzR * intensidadeT;
+	localCorEsp[1] = luzG * intensidadeT;
+	localCorEsp[2] = luzB * intensidadeT;;
+	glLightfv(GL_LIGHT0, GL_AMBIENT, localCorAmb);
+	glLightfv(GL_LIGHT0, GL_DIFFUSE, localCorDif);
+	glLightfv(GL_LIGHT0, GL_SPECULAR, localCorEsp);
 }
 
 //======================================================= EVENTOS
@@ -551,38 +614,88 @@ void keyboard(unsigned char key, int x, int y) {
 		glutPostRedisplay();
 		break;
 
-	case 'A':
+	case 'q': 
+	case 'Q':
+		obsPini[1] = obsPini[1] + 1;
+		glutPostRedisplay();
+		break;
+
 	case 'a':
+	case 'A':
+		obsPini[1] = obsPini[1] - 1;
+		glutPostRedisplay();
+		break;
+
+	case 'z':
+	case 'Z':
 		translateZ[2] = (translateZ[2] - 1);
 		glutPostRedisplay();
 		break;
 
-	case 'S':
-	case 's':
+	case 'x':
+	case 'X':
 		translateZ[2] = (translateZ[2] + 1);
+		glutPostRedisplay();
+		break;
+
+	case 'o':
+	case 'O':
+		rotateTudo[0] = (rotateTudo[0] - 30);
+		glutPostRedisplay();
+		break;
+
+	case 'p':
+	case 'P':
+		rotateTudo[0] = (rotateTudo[0] + 30);
 		glutPostRedisplay();
 		break;
 
 	case 'e':
 	case 'E':
-		rotateTudo[0] = (rotateTudo[0] - 30);
+		anim = !anim;
 		glutPostRedisplay();
 		break;
 
 	case 'd':
 	case 'D':
-		rotateTudo[0] = (rotateTudo[0] + 30);
+		Dia = !Dia;
+		if (Dia) { luzGlobalCorAmb[0] = 1;   luzGlobalCorAmb[1] = 1;   luzGlobalCorAmb[2] = 1; }
+		else { luzGlobalCorAmb[0] = 0;   luzGlobalCorAmb[1] = 0;   luzGlobalCorAmb[2] = 0; }
+		glLightModelfv(GL_LIGHT_MODEL_AMBIENT, luzGlobalCorAmb);
 		glutPostRedisplay();
 		break;
 
-	case 'r':
-	case 'R':
-		if (!anim) {
-			anim = true;
-		}
-		else {
-			anim = false;
-		}
+	// Liga e desliga luz do teto
+	case 't':
+	case 'T':
+		luzTeto = !luzTeto;
+		updateLuz();
+		glutPostRedisplay();
+		break;
+
+	// Aumenta a intensidade da luz do teto
+	case 'i':
+	case 'I':
+		intensidadeT = intensidadeT + 0.1;
+		if (intensidadeT > 1.1) intensidadeT = 0;
+		updateLuz();
+		glutPostRedisplay();
+		break;
+
+	// Cores da luz do teto
+	case 'r':case 'R':
+		luzR = (luzR + 1) % 2;
+		updateLuz();
+		glutPostRedisplay();
+		break;
+	case 'g':case 'G':
+		luzG = (luzG + 1) % 2;
+		updateLuz();
+		glutPostRedisplay();
+		break;
+	case 'b':case 'B':
+		luzB = (luzB + 1) % 2;
+		updateLuz();
 		glutPostRedisplay();
 		break;
 
@@ -596,21 +709,17 @@ void keyboard(unsigned char key, int x, int y) {
 
 
 void teclasNotAscii(int key, int x, int y) {
-	//.. observador pode andar à volda da cena  (setas esquerda / direita)
-	//.. observador pode andar para cima e para baixo (setas cima / baixo )
-
-	if (key == GLUT_KEY_UP)   obsP[1] = (obsP[1] + 0.1);
-	if (key == GLUT_KEY_DOWN) obsP[1] = (obsP[1] - 0.1);
-	if (key == GLUT_KEY_LEFT)  aVisao = (aVisao + 0.1);
-	if (key == GLUT_KEY_RIGHT) aVisao = (aVisao - 0.1);
-	
-	if (obsP[1] >  yC)   obsP[1] = yC;   // limita altura
-	if (obsP[1] < -yC)  obsP[1] = -yC;
-
-	obsP[0] = rVisao * cos(aVisao);      // actualiza posicao (X,Z)
-	obsP[2] = rVisao * sin(aVisao);
-	
-	glutPostRedisplay();
+	if (key == GLUT_KEY_UP) {
+		obsPini[0] = obsPini[0] + incVisao * cos(aVisao);
+		obsPini[2] = obsPini[2] - incVisao * sin(aVisao);
+	}
+	if (key == GLUT_KEY_DOWN) {
+		obsPini[0] = obsPini[0] - incVisao * cos(aVisao);
+		obsPini[2] = obsPini[2] + incVisao * sin(aVisao);
+	}
+	if (key == GLUT_KEY_LEFT)   aVisao = (aVisao + 0.1);
+	if (key == GLUT_KEY_RIGHT) 	aVisao = (aVisao - 0.1);
+	updateVisao();
 }
 
 
@@ -628,7 +737,7 @@ int main(int argc, char** argv) {
 	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH);
 	glutInitWindowSize(wScreen, hScreen);
 	glutInitWindowPosition(300, 50);
-	glutCreateWindow("{jh,ep}@dei.uc.pt | Mover/rodar Cima: 'r' | FaceVisivel: 'f' | Observador: 'SETAS' | Andar: 'a/s' | Rodar: 'e/d'| Animacao: 'r'");
+	glutCreateWindow("SETAS: Obs | Q/A: Subir/Descer obs | E: Animacao | O/P: Rodar mesa | Z/X: Mexer mesa | F: Frente vis");
 
 	inicializa();
 
