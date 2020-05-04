@@ -614,48 +614,58 @@ void keyboard(unsigned char key, int x, int y) {
 		glutPostRedisplay();
 		break;
 
+	// --------------------------------------------- Observador
 	case 'q': 
 	case 'Q':
 		obsPini[1] = obsPini[1] + 1;
 		glutPostRedisplay();
 		break;
-
 	case 'a':
 	case 'A':
 		obsPini[1] = obsPini[1] - 1;
 		glutPostRedisplay();
 		break;
+	case 's': case 'S':
+		angPersp = angPersp + 3;
+		if (angPersp > 170) angPersp = 170;
+		glutPostRedisplay();
+		break;
+	case 'w': case 'W':
+		angPersp = angPersp - 3;
+		if (angPersp < 1) angPersp = 1;
+		glutPostRedisplay();
+		break;
 
+		// --------------------------------------------- Mesa
 	case 'z':
 	case 'Z':
 		translateZ[2] = (translateZ[2] - 1);
 		glutPostRedisplay();
 		break;
-
 	case 'x':
 	case 'X':
 		translateZ[2] = (translateZ[2] + 1);
 		glutPostRedisplay();
 		break;
-
 	case 'o':
 	case 'O':
 		rotateTudo[0] = (rotateTudo[0] - 30);
 		glutPostRedisplay();
 		break;
-
 	case 'p':
 	case 'P':
 		rotateTudo[0] = (rotateTudo[0] + 30);
 		glutPostRedisplay();
 		break;
 
+	// --------------------------------------------- Animacao
 	case 'e':
 	case 'E':
 		anim = !anim;
 		glutPostRedisplay();
 		break;
 
+	// --------------------------------------------- Luz Ambiente
 	case 'd':
 	case 'D':
 		Dia = !Dia;
@@ -665,15 +675,15 @@ void keyboard(unsigned char key, int x, int y) {
 		glutPostRedisplay();
 		break;
 
-	// Liga e desliga luz do teto
+	// --------------------------------------------- Luz Teto
+	// Liga e desliga
 	case 't':
 	case 'T':
 		luzTeto = !luzTeto;
 		updateLuz();
 		glutPostRedisplay();
 		break;
-
-	// Aumenta a intensidade da luz do teto
+	// Aumenta a intensidade
 	case 'i':
 	case 'I':
 		intensidadeT = intensidadeT + 0.1;
@@ -681,7 +691,6 @@ void keyboard(unsigned char key, int x, int y) {
 		updateLuz();
 		glutPostRedisplay();
 		break;
-
 	// Cores da luz do teto
 	case 'r':case 'R':
 		luzR = (luzR + 1) % 2;
@@ -699,7 +708,7 @@ void keyboard(unsigned char key, int x, int y) {
 		glutPostRedisplay();
 		break;
 
-		//--------------------------- Escape
+	// --------------------------------------------- Sair
 	case 27:
 		exit(0);
 		break;
@@ -737,7 +746,7 @@ int main(int argc, char** argv) {
 	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH);
 	glutInitWindowSize(wScreen, hScreen);
 	glutInitWindowPosition(300, 50);
-	glutCreateWindow("SETAS: Obs | Q/A: Subir/Descer obs | E: Animacao | O/P: Rodar mesa | Z/X: Mexer mesa | F: Frente vis");
+	glutCreateWindow("SETAS/Q/A/W/S: Observador | E: Animacao | Z/XO/P: Mesa | F: Frente vis | D: Luz ambiente | T/I/R/G/B: Luz teto");
 
 	inicializa();
 
