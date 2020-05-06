@@ -187,6 +187,22 @@ GLfloat localCorAmb[4] = { luzR, luzG, luzB, 1.0 };
 GLfloat localCorDif[4] = { luzR, luzG, luzB, 1.0 };
 GLfloat localCorEsp[4] = { luzR, luzG, luzB, 1.0 };
 
+// -------------------------------------------------------------- Iluminacao - Foco
+GLint   ligaFoco = 0;
+GLfloat rFoco = 1.1, aFoco = aVisao;
+GLfloat incH = 0.0, incV = 0.0;
+GLfloat incMaxH = 0.5, incMaxV = 0.35;
+GLfloat focoPini[] = { obsPini[0], obsPini[1], obsPini[2], 1.0 };
+GLfloat focoPfin[] = { obsPini[0] - rFoco * cos(aFoco), obsPini[1], obsPini[2] - rFoco * sin(aFoco), 1.0 };
+GLfloat focoDir[] = { focoPfin[0] - focoPini[0], 0, focoPfin[2] - focoPini[2] };
+GLfloat focoExp = 10.0;
+GLfloat focoCut = 60.0;
+
+GLfloat focoCorDif[4] = { 0.9, 0.9, 0.9, 1.0 };
+GLfloat focoCorEsp[4] = { 1.0, 1.0, 1.0, 1.0 };
+
+
+
 //================================================================================
 //=========================================================================== INIT
 void initLights(void) {
@@ -197,6 +213,14 @@ void initLights(void) {
 	glLightfv(GL_LIGHT0, GL_AMBIENT, localCorAmb);
 	glLightfv(GL_LIGHT0, GL_DIFFUSE, localCorDif);
 	glLightfv(GL_LIGHT0, GL_SPECULAR, localCorEsp);
+
+	// Foco
+	glLightfv(GL_LIGHT1, GL_POSITION, focoPini);
+	glLightfv(GL_LIGHT1, GL_SPOT_DIRECTION, focoDir);
+	glLightf(GL_LIGHT1, GL_SPOT_EXPONENT, focoExp);
+	glLightf(GL_LIGHT1, GL_SPOT_CUTOFF, focoCut);
+	glLightfv(GL_LIGHT1, GL_DIFFUSE, focoCorDif);
+	glLightfv(GL_LIGHT1, GL_SPECULAR, focoCorEsp);
 }
 
 void inicializa(void){
@@ -207,6 +231,8 @@ void inicializa(void){
 
 	glEnable(GL_LIGHTING);
 	glEnable(GL_LIGHT0);
+	glEnable(GL_LIGHT1);
+	//glLightModeli(GL_LIGHT_MODEL_TWO_SIDE, GL_TRUE);
 
 	initLights();
 
@@ -550,9 +576,65 @@ void drawChao() {
 	glPopMatrix();
 }
 
+void drawParedes() {
+	for (int i = 0; i < 4; i++){
+		if (i == 0) {
+			glPushMatrix();
+				glTranslatef(4, xC, -xC);
+				glRotatef(90, 1, 0, 0);
+				glBegin(GL_QUADS);
+					glTexCoord2f(0.0f, 0.0f);  		glVertex3i(-xC, 0, -xC);
+					glTexCoord2f(1.0, 0.0); 		glVertex3i(-xC, 0, xC);
+					glTexCoord2f(1.0, 1.0);			glVertex3i(xC, 0, xC);
+					glTexCoord2f(0.0, 1.0);			glVertex3i(xC, 0, -xC);
+				glEnd();
+			glPopMatrix();
+		}
+		if (i == 1) {
+			glPushMatrix();
+				glTranslatef(4, xC, xC);
+				glRotatef(-90, 1, 0, 0);
+				glBegin(GL_QUADS);
+					glTexCoord2f(0.0f, 0.0f);  		glVertex3i(-xC, 0, -xC);
+					glTexCoord2f(1.0, 0.0); 		glVertex3i(-xC, 0, xC);
+					glTexCoord2f(1.0, 1.0);			glVertex3i(xC, 0, xC);
+					glTexCoord2f(0.0, 1.0);			glVertex3i(xC, 0, -xC);
+				glEnd();
+			glPopMatrix();
+		}
+		if (i == 2) {
+			glPushMatrix();
+				glTranslatef(4-xC, xC, 0);
+				glRotatef(90, 0, 0, 1);
+				glBegin(GL_QUADS);
+					glTexCoord2f(0.0f, 0.0f);  		glVertex3i(-xC, 0, -xC);
+					glTexCoord2f(1.0, 0.0); 		glVertex3i(-xC, 0, xC);
+					glTexCoord2f(1.0, 1.0);			glVertex3i(xC, 0, xC);
+					glTexCoord2f(0.0, 1.0);			glVertex3i(xC, 0, -xC);
+				glEnd();
+			glPopMatrix();
+		}
+		if (i == 3) {
+			glPushMatrix();
+				glTranslatef(4+xC, xC, 0);
+				glRotatef(-90, 0, 0, 1);
+				glBegin(GL_QUADS);
+					glTexCoord2f(0.0f, 0.0f);  		glVertex3i(-xC, 0, -xC);
+					glTexCoord2f(1.0, 0.0); 		glVertex3i(-xC, 0, xC);
+					glTexCoord2f(1.0, 1.0);			glVertex3i(xC, 0, xC);
+					glTexCoord2f(0.0, 1.0);			glVertex3i(xC, 0, -xC);
+				glEnd();
+			glPopMatrix();
+		}
+	}
+}
+
 void iluminacao() {
 	if (luzTeto)		glEnable(GL_LIGHT0);
 	else				glDisable(GL_LIGHT0);
+
+	if (ligaFoco)		glEnable(GL_LIGHT1);
+	else				glDisable(GL_LIGHT1);
 }
 
 void display(void) {
@@ -575,6 +657,7 @@ void display(void) {
 	//…………………………………………………………………………………………………………………………………………………………Objectos
 	iluminacao();
 	drawChao();
+	drawParedes();
 	drawEixos();
 	drawMesa();
 	
@@ -585,6 +668,17 @@ void display(void) {
 void updateVisao() {
 	obsPfin[0] = obsPini[0] + rVisao * cos(aVisao);
 	obsPfin[2] = obsPini[2] - rVisao * sin(aVisao);
+
+	focoPini[0] = obsPini[0];
+	focoPini[2] = obsPini[2];
+	focoPfin[0] = focoPini[0] - rFoco * cos(aFoco + incH);
+	focoPfin[2] = focoPini[2] - rFoco * sin(aFoco + incH);
+	focoPini[1] = obsPini[1];
+	focoPini[2] = obsPini[2];
+	focoDir[0] = focoPfin[0] - focoPini[0];
+	focoDir[1] = incV;
+	focoDir[2] = focoPfin[2] - focoPini[2];
+
 	glutPostRedisplay();
 }
 
@@ -608,8 +702,9 @@ void keyboard(unsigned char key, int x, int y) {
 
 
 	switch (key) {
-	case 'f':
-	case 'F':
+	// --------------------------------------------- Visibilidade
+	case 'v':
+	case 'V':
 		frenteVisivel = !frenteVisivel;
 		glutPostRedisplay();
 		break;
@@ -669,8 +764,9 @@ void keyboard(unsigned char key, int x, int y) {
 	case 'd':
 	case 'D':
 		Dia = !Dia;
-		if (Dia) { luzGlobalCorAmb[0] = 1;   luzGlobalCorAmb[1] = 1;   luzGlobalCorAmb[2] = 1; }
-		else { luzGlobalCorAmb[0] = 0;   luzGlobalCorAmb[1] = 0;   luzGlobalCorAmb[2] = 0; }
+		
+		if (Dia) { luzGlobalCorAmb[0] = 1;   luzGlobalCorAmb[1] = 1;   luzGlobalCorAmb[2] = 1; cout << "Dia: On\n"; }
+		else { luzGlobalCorAmb[0] = 0;   luzGlobalCorAmb[1] = 0;   luzGlobalCorAmb[2] = 0;  cout << "Dia: Off\n";}
 		glLightModelfv(GL_LIGHT_MODEL_AMBIENT, luzGlobalCorAmb);
 		glutPostRedisplay();
 		break;
@@ -680,6 +776,8 @@ void keyboard(unsigned char key, int x, int y) {
 	case 't':
 	case 'T':
 		luzTeto = !luzTeto;
+		if (luzTeto)	cout << "Teto: On\n";
+		else            cout << "Teto: Off\n";
 		updateLuz();
 		glutPostRedisplay();
 		break;
@@ -704,6 +802,16 @@ void keyboard(unsigned char key, int x, int y) {
 		break;
 	case 'b':case 'B':
 		luzB = (luzB + 1) % 2;
+		updateLuz();
+		glutPostRedisplay();
+		break;
+
+	// --------------------------------------------- Luz Teto
+	case 'f':
+	case 'F':
+		ligaFoco = !ligaFoco;
+		if (ligaFoco)	cout << "Foco: On\n";
+		else            cout << "Foco: Off\n";
 		updateLuz();
 		glutPostRedisplay();
 		break;
