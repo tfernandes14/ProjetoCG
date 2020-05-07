@@ -18,5 +18,27 @@
     <ClCompile Include="ProjetoCG.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="RgbImage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="RgbImage.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="bola.bmp">
+      <Filter>Source Files</Filter>
+    </Image>
+    <Image Include="colorida.bmp">
+      <Filter>Source Files</Filter>
+    </Image>
+    <Image Include="madeira.bmp">
+      <Filter>Source Files</Filter>
+    </Image>
+    <Image Include="pedra.bmp">
+      <Filter>Source Files</Filter>
+    </Image>
   </ItemGroup>
 </Project>
