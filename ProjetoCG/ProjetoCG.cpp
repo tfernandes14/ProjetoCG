@@ -257,7 +257,7 @@ GLfloat  redPlasticSpec[] = { 0.7 ,0.6 ,0.6 };
 GLint  redPlasticCoef = 0.25 * 128;
 
 GLfloat whitePlasticAmb[] = { 0.8 ,0.8 ,0.8 };
-GLfloat whitePlasticDif[] = { 0.55 ,0.55 ,0.55 };
+GLfloat whitePlasticDif[] = { 0.55 ,0.55 ,0.55, 0.35};
 GLfloat whitePlasticSpec[] = { 0.870 ,0.870 ,0.870 };
 GLint whitePlasticCoef = 0.25 * 128;
 
@@ -311,7 +311,7 @@ void initTexturas()
 	//----------------------------------------- Chao
 	glGenTextures(1, &texture[0]);
 	glBindTexture(GL_TEXTURE_2D, texture[0]);
-	imag.LoadBmpFile("pedra.bmp");
+	imag.LoadBmpFile("madeira.bmp");
 	glTexEnvf(GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_MODULATE);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
@@ -435,13 +435,13 @@ void initMaterials(int material) {
 		glMaterialfv(GL_FRONT, GL_SPECULAR, redPlasticSpec);
 		glMaterialf(GL_FRONT, GL_SHININESS, redPlasticCoef);
 		break;
-	case 16: //……………………………………………………………………………………………yellowPlastic
+	case 22: //……………………………………………………………………………………………yellowPlastic
 		glMaterialfv(GL_FRONT, GL_AMBIENT, whitePlasticAmb);
 		glMaterialfv(GL_FRONT, GL_DIFFUSE, whitePlasticDif);
 		glMaterialfv(GL_FRONT, GL_SPECULAR, whitePlasticSpec);
 		glMaterialf(GL_FRONT, GL_SHININESS, whitePlasticCoef);
 		break;
-	case 17: //……………………………………………………………………………………………yellowPlastic
+	case 16: //……………………………………………………………………………………………yellowPlastic
 		glMaterialfv(GL_FRONT, GL_AMBIENT, yellowPlasticAmb);
 		glMaterialfv(GL_FRONT, GL_DIFFUSE, yellowPlasticDif);
 		glMaterialfv(GL_FRONT, GL_SPECULAR, yellowPlasticSpec);
@@ -683,7 +683,6 @@ void desenhaPerna(int i) {
 	glPopMatrix();
 }
 
-
 void desenhaTampo() {
 	initMaterials(material);
 	GLfloat  translatePernas[] = { 0, altPernas + 0.5, distZ };
@@ -779,7 +778,6 @@ void desenhaTampo() {
 	glPopMatrix();
 }
 
-
 void drawMesa() {
 	initMaterials(material);
 	//=================================================== Qual o lado visivel ???
@@ -814,6 +812,7 @@ void drawMesa() {
 }
 
 void drawChao() {
+	initMaterials(22);
 	if (transparencia) {
 		glEnable(GL_BLEND);	//………………………………………………………………………………Transparencia
 		glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
@@ -908,7 +907,8 @@ void drawParedes() {
 }
 
 void drawSkyBox(){
-	glLightModeli(GL_LIGHT_MODEL_TWO_SIDE, GL_TRUE);
+	initMaterials(22);
+	//glLightModeli(GL_LIGHT_MODEL_TWO_SIDE, GL_TRUE);
 	//------------------------- Skybox
 	glEnable(GL_TEXTURE_2D);
 		glBindTexture(GL_TEXTURE_2D, texture[1]);
@@ -951,9 +951,9 @@ void display(void) {
 	//drawEixos();
 	iluminacao();
 	//drawParedes();
-	drawMesa();
 	drawSkyBox();
 	drawChao();
+	drawMesa();
 	
 	//. . . . . . . . . . . . . . . . . . . . .  Actualizacao
 	glutSwapBuffers();
@@ -1057,7 +1057,7 @@ void keyboard(unsigned char key, int x, int y) {
 	// --------------------------------------------- Material mesa
 	case 'm':
 	case 'M':
-		material = (material + 1) % 18;
+		material = (material + 1) % 17;
 		initMaterials(material);
 		glutPostRedisplay();
 		break;

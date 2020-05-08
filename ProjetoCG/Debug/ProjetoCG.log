@@ -63,7 +63,7 @@ C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cp
 C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(256,45): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
 C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(257,23): warning C4244: 'initializing': conversion from 'double' to 'GLint', possible loss of data
 C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(259,45): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
-C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(260,48): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(260,53): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
 C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(261,52): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
 C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(262,24): warning C4244: 'initializing': conversion from 'double' to 'GLint', possible loss of data
 C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(266,50): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
@@ -107,56 +107,56 @@ C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cp
 C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(436,39): warning C4244: 'argument': conversion from 'GLint' to 'GLfloat', possible loss of data
 C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(442,39): warning C4244: 'argument': conversion from 'GLint' to 'GLfloat', possible loss of data
 C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(448,39): warning C4244: 'argument': conversion from 'GLint' to 'GLfloat', possible loss of data
-C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(689,46): warning C4838: conversion from 'double' to 'GLfloat' requires a narrowing conversion
-C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(689,46): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(826,53): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
-C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(826,45): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(688,46): warning C4838: conversion from 'double' to 'GLfloat' requires a narrowing conversion
+C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(688,46): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(825,53): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(825,45): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(826,52): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(826,44): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
 C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(827,52): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
-C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(827,44): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(827,45): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
 C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(828,52): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
 C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(828,45): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
-C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(829,52): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
-C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(829,45): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
-C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(842,53): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
-C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(842,45): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(841,53): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(841,45): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(842,52): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(842,44): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
 C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(843,52): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
-C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(843,44): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(843,45): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
 C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(844,52): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
 C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(844,45): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
-C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(845,52): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
-C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(845,45): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
-C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(863,54): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
-C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(863,46): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
-C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(864,51): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(862,54): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(862,46): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(863,51): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(863,43): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(864,50): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
 C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(864,43): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
 C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(865,50): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
 C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(865,43): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
-C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(866,50): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
-C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(866,43): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
-C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(875,54): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
-C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(875,46): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
-C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(876,51): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(874,54): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(874,46): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(875,51): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(875,43): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(876,50): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
 C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(876,43): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
 C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(877,50): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
 C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(877,43): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
-C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(878,50): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
-C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(878,43): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
-C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(887,54): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
-C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(887,46): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
-C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(888,51): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(886,54): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(886,46): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(887,51): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(887,43): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(888,50): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
 C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(888,43): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
 C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(889,50): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
 C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(889,43): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
-C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(890,50): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
-C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(890,43): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
-C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(899,54): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
-C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(899,46): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
-C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(900,51): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(898,54): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(898,46): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(899,51): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(899,43): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(900,50): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
 C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(900,43): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
 C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(901,50): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
 C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(901,43): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
-C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(902,50): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
-C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(902,43): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
 C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(1096,31): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
 C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(1146,47): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
 C:\Users\tferr\OneDrive\Ambiente de Trabalho\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(1147,47): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
