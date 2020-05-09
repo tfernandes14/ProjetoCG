@@ -79,8 +79,6 @@ static GLfloat corPernas[] = {
 	  1.0,  0.0, 1.0,	// 11 
 };
 
-
-
 static GLfloat verticesTampo[] = {
 	//…………………………………………………………………………………………………… x=tam (Esquerda)
 		-tam,  -tam,  tam,	// 0 
@@ -812,8 +810,10 @@ void drawMesa() {
 }
 
 void drawChao() {
+	int inc = 0.1;
+	int inicio_menor_x = -xC, inicio_menor_y = -xC;
 	initMaterials(22);
-	if (transparencia) {
+	//if (transparencia) {
 		glEnable(GL_BLEND);	//………………………………………………………………………………Transparencia
 		glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 		glEnable(GL_TEXTURE_2D);
@@ -821,16 +821,23 @@ void drawChao() {
 		glNormal3f(0, 1, 0);
 		glPushMatrix();
 			glTranslatef(4, 0, 0);
-			glBegin(GL_QUADS);
-				glTexCoord2f(0.0f, 0.0f);  	 glVertex3i(-xC, 0, -xC);
-				glTexCoord2f(1.0f, 0.0f); 	 glVertex3i(-xC, 0, xC);
-				glTexCoord2f(1.0f, 1.0f);    glVertex3i(xC, 0, xC);
-				glTexCoord2f(0.0f, 1.0f);    glVertex3i(xC, 0, -xC);
-			glEnd();
+			for (int i = 0; i < xC / inc; i++) {
+				for (int j = 0; j < xC / inc; j++) {
+					glBegin(GL_QUADS);
+					glTexCoord2f(0.0f, 0.0f);  	 glVertex3i(inicio_menor_x, 0, inicio_menor_y);
+					glTexCoord2f(1.0f, 0.0f); 	 glVertex3i(inicio_menor_x, 0, inicio_menor_y + inc);
+					glTexCoord2f(1.0f, 1.0f);    glVertex3i(inicio_menor_x + inc, 0, inicio_menor_y + inc);
+					glTexCoord2f(0.0f, 1.0f);    glVertex3i(inicio_menor_x + inc, 0, inicio_menor_y);
+					glEnd();
+					inicio_menor_y += inc;
+				}
+				inicio_menor_y = -xC;
+				inicio_menor_x += inc;
+			}
 		glPopMatrix();
 		glDisable(GL_TEXTURE_2D);
 		glDisable(GL_BLEND);
-	}
+	/*}
 	else {
 		glEnable(GL_TEXTURE_2D);
 		glBindTexture(GL_TEXTURE_2D, texture[0]);
@@ -845,7 +852,7 @@ void drawChao() {
 			glEnd();
 		glPopMatrix();
 		glDisable(GL_TEXTURE_2D);
-	}
+	}*/
 }
 
 void drawParedes() {

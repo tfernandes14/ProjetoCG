@@ -1,0 +1,303 @@
+﻿  materials.cpp
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(5,51): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(6,54): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(7,52): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(8,23): warning C4244: 'initializing': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(10,46): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(11,41): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(12,54): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(13,18): warning C4244: 'initializing': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(15,51): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(16,51): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(17,58): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(18,21): warning C4244: 'initializing': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(20,48): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(21,43): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(22,55): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(23,18): warning C4244: 'initializing': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(25,49): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(26,50): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(27,54): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(28,17): warning C4244: 'initializing': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(30,50): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(31,53): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(32,58): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(33,22): warning C4244: 'initializing': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(35,54): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(36,54): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(37,55): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(38,18): warning C4244: 'initializing': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(40,48): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(41,49): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(42,56): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(43,19): warning C4244: 'initializing': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(46,40): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(47,56): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(48,19): warning C4244: 'initializing': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(50,50): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(51,50): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(52,56): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(53,19): warning C4244: 'initializing': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(55,48): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(56,50): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(57,54): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(58,17): warning C4244: 'initializing': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(60,52): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(61,52): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(62,56): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(63,19): warning C4244: 'initializing': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(66,48): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(68,24): warning C4244: 'initializing': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(70,46): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(71,59): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(72,67): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(73,24): warning C4244: 'initializing': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(76,46): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(77,49): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(78,24): warning C4244: 'initializing': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(82,45): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(83,23): warning C4244: 'initializing': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(85,45): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(86,54): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(87,52): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(88,24): warning C4244: 'initializing': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(92,50): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(93,25): warning C4244: 'initializing': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.cpp(10,39): warning C4244: 'argument': conversion from 'GLint' to 'GLfloat', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.cpp(16,39): warning C4244: 'argument': conversion from 'GLint' to 'GLfloat', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.cpp(22,39): warning C4244: 'argument': conversion from 'GLint' to 'GLfloat', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.cpp(28,39): warning C4244: 'argument': conversion from 'GLint' to 'GLfloat', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.cpp(34,39): warning C4244: 'argument': conversion from 'GLint' to 'GLfloat', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.cpp(40,39): warning C4244: 'argument': conversion from 'GLint' to 'GLfloat', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.cpp(46,39): warning C4244: 'argument': conversion from 'GLint' to 'GLfloat', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.cpp(52,39): warning C4244: 'argument': conversion from 'GLint' to 'GLfloat', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.cpp(58,39): warning C4244: 'argument': conversion from 'GLint' to 'GLfloat', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.cpp(64,39): warning C4244: 'argument': conversion from 'GLint' to 'GLfloat', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.cpp(70,39): warning C4244: 'argument': conversion from 'GLint' to 'GLfloat', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.cpp(76,39): warning C4244: 'argument': conversion from 'GLint' to 'GLfloat', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.cpp(82,39): warning C4244: 'argument': conversion from 'GLint' to 'GLfloat', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.cpp(88,39): warning C4244: 'argument': conversion from 'GLint' to 'GLfloat', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.cpp(94,39): warning C4244: 'argument': conversion from 'GLint' to 'GLfloat', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.cpp(100,39): warning C4244: 'argument': conversion from 'GLint' to 'GLfloat', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.cpp(106,39): warning C4244: 'argument': conversion from 'GLint' to 'GLfloat', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.cpp(112,39): warning C4244: 'argument': conversion from 'GLint' to 'GLfloat', possible loss of data
+  ProjetoCG.cpp
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(5,51): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(6,54): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(7,52): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(8,23): warning C4244: 'initializing': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(10,46): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(11,41): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(12,54): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(13,18): warning C4244: 'initializing': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(15,51): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(16,51): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(17,58): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(18,21): warning C4244: 'initializing': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(20,48): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(21,43): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(22,55): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(23,18): warning C4244: 'initializing': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(25,49): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(26,50): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(27,54): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(28,17): warning C4244: 'initializing': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(30,50): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(31,53): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(32,58): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(33,22): warning C4244: 'initializing': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(35,54): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(36,54): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(37,55): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(38,18): warning C4244: 'initializing': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(40,48): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(41,49): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(42,56): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(43,19): warning C4244: 'initializing': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(46,40): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(47,56): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(48,19): warning C4244: 'initializing': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(50,50): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(51,50): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(52,56): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(53,19): warning C4244: 'initializing': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(55,48): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(56,50): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(57,54): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(58,17): warning C4244: 'initializing': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(60,52): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(61,52): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(62,56): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(63,19): warning C4244: 'initializing': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(66,48): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(68,24): warning C4244: 'initializing': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(70,46): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(71,59): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(72,67): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(73,24): warning C4244: 'initializing': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(76,46): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(77,49): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(78,24): warning C4244: 'initializing': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(82,45): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(83,23): warning C4244: 'initializing': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(85,45): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(86,54): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(87,52): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(88,24): warning C4244: 'initializing': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(92,50): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\materials.h(93,25): warning C4244: 'initializing': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\ProjetoCG.h(27,25): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\ProjetoCG.h(161,41): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\ProjetoCG.h(162,36): warning C4838: conversion from 'double' to 'GLfloat' requires a narrowing conversion
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\ProjetoCG.h(162,36): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\ProjetoCG.h(175,26): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\ProjetoCG.h(191,27): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\ProjetoCG.h(196,28): warning C4838: conversion from 'GLint' to 'GLfloat' requires a narrowing conversion
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\ProjetoCG.h(196,28): warning C4244: 'initializing': conversion from 'GLint' to 'GLfloat', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\ProjetoCG.h(196,34): warning C4838: conversion from 'GLint' to 'GLfloat' requires a narrowing conversion
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\ProjetoCG.h(196,34): warning C4244: 'initializing': conversion from 'GLint' to 'GLfloat', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\ProjetoCG.h(196,40): warning C4838: conversion from 'GLint' to 'GLfloat' requires a narrowing conversion
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\ProjetoCG.h(196,40): warning C4244: 'initializing': conversion from 'GLint' to 'GLfloat', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\ProjetoCG.h(197,28): warning C4838: conversion from 'GLint' to 'GLfloat' requires a narrowing conversion
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\ProjetoCG.h(197,28): warning C4244: 'initializing': conversion from 'GLint' to 'GLfloat', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\ProjetoCG.h(197,34): warning C4838: conversion from 'GLint' to 'GLfloat' requires a narrowing conversion
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\ProjetoCG.h(197,34): warning C4244: 'initializing': conversion from 'GLint' to 'GLfloat', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\ProjetoCG.h(197,40): warning C4838: conversion from 'GLint' to 'GLfloat' requires a narrowing conversion
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\ProjetoCG.h(197,40): warning C4244: 'initializing': conversion from 'GLint' to 'GLfloat', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\ProjetoCG.h(198,28): warning C4838: conversion from 'GLint' to 'GLfloat' requires a narrowing conversion
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\ProjetoCG.h(198,28): warning C4244: 'initializing': conversion from 'GLint' to 'GLfloat', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\ProjetoCG.h(198,34): warning C4838: conversion from 'GLint' to 'GLfloat' requires a narrowing conversion
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\ProjetoCG.h(198,34): warning C4244: 'initializing': conversion from 'GLint' to 'GLfloat', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\ProjetoCG.h(198,40): warning C4838: conversion from 'GLint' to 'GLfloat' requires a narrowing conversion
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\ProjetoCG.h(198,40): warning C4244: 'initializing': conversion from 'GLint' to 'GLfloat', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\ProjetoCG.h(204,38): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\ProjetoCG.h(211,46): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(268,46): warning C4838: conversion from 'double' to 'GLfloat' requires a narrowing conversion
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(268,46): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(405,53): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(405,45): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(406,52): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(406,44): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(407,52): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(407,45): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(408,52): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(408,45): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(421,53): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(421,45): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(422,52): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(422,44): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(423,52): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(423,45): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(424,52): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(424,45): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(442,54): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(442,46): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(443,51): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(443,43): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(444,50): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(444,43): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(445,50): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(445,43): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(454,54): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(454,46): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(455,51): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(455,43): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(456,50): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(456,43): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(457,50): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(457,43): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(466,54): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(466,46): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(467,51): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(467,43): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(468,50): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(468,43): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(469,50): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(469,43): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(478,54): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(478,46): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(479,51): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(479,43): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(480,50): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(480,43): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(481,50): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(481,43): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(676,31): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(726,47): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\ProjetoCG.cpp(727,47): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+  RgbImage.cpp
+C:\Users\tferr\Desktop\CG\ProjetoCG\ProjetoCG\RgbImage.cpp(182,10): warning C4101: 'err': unreferenced local variable
+ProjetoCG.obj : error LNK2005: "float * cyanPlasticAmb" (?cyanPlasticAmb@@3PAMA) already defined in materials.obj
+ProjetoCG.obj : error LNK2005: "float * copperDif" (?copperDif@@3PAMA) already defined in materials.obj
+ProjetoCG.obj : error LNK2005: "float * silverDif" (?silverDif@@3PAMA) already defined in materials.obj
+ProjetoCG.obj : error LNK2005: "float * blackPlasticAmb" (?blackPlasticAmb@@3PAMA) already defined in materials.obj
+ProjetoCG.obj : error LNK2005: "float * pearlSpec" (?pearlSpec@@3PAMA) already defined in materials.obj
+ProjetoCG.obj : error LNK2005: "float * rubyAmb" (?rubyAmb@@3PAMA) already defined in materials.obj
+ProjetoCG.obj : error LNK2005: "float * jadeAmb" (?jadeAmb@@3PAMA) already defined in materials.obj
+ProjetoCG.obj : error LNK2005: "float * blackPlasticSpec" (?blackPlasticSpec@@3PAMA) already defined in materials.obj
+ProjetoCG.obj : error LNK2005: "int greenPlasticCoef" (?greenPlasticCoef@@3HA) already defined in materials.obj
+ProjetoCG.obj : error LNK2005: "float * yellowPlasticDif" (?yellowPlasticDif@@3PAMA) already defined in materials.obj
+ProjetoCG.obj : error LNK2005: "int rubyCoef" (?rubyCoef@@3HA) already defined in materials.obj
+ProjetoCG.obj : error LNK2005: "int material" (?material@@3HA) already defined in materials.obj
+ProjetoCG.obj : error LNK2005: "float * chromeSpec" (?chromeSpec@@3PAMA) already defined in materials.obj
+ProjetoCG.obj : error LNK2005: "float * obsidianAmb" (?obsidianAmb@@3PAMA) already defined in materials.obj
+ProjetoCG.obj : error LNK2005: "float * esmeraldAmb" (?esmeraldAmb@@3PAMA) already defined in materials.obj
+ProjetoCG.obj : error LNK2005: "float * chromeDif" (?chromeDif@@3PAMA) already defined in materials.obj
+ProjetoCG.obj : error LNK2005: "float * copperAmb" (?copperAmb@@3PAMA) already defined in materials.obj
+ProjetoCG.obj : error LNK2005: "float * goldAmb" (?goldAmb@@3PAMA) already defined in materials.obj
+ProjetoCG.obj : error LNK2005: "float * whitePlasticAmb" (?whitePlasticAmb@@3PAMA) already defined in materials.obj
+ProjetoCG.obj : error LNK2005: "float * bronzeSpec" (?bronzeSpec@@3PAMA) already defined in materials.obj
+ProjetoCG.obj : error LNK2005: "float * redPlasticAmb" (?redPlasticAmb@@3PAMA) already defined in materials.obj
+ProjetoCG.obj : error LNK2005: "float * silverAmb" (?silverAmb@@3PAMA) already defined in materials.obj
+ProjetoCG.obj : error LNK2005: "int esmeraldCoef" (?esmeraldCoef@@3HA) already defined in materials.obj
+ProjetoCG.obj : error LNK2005: "float * brassDif" (?brassDif@@3PAMA) already defined in materials.obj
+ProjetoCG.obj : error LNK2005: "float * cyanPlasticSpec" (?cyanPlasticSpec@@3PAMA) already defined in materials.obj
+ProjetoCG.obj : error LNK2005: "float * yellowPlasticSpec" (?yellowPlasticSpec@@3PAMA) already defined in materials.obj
+ProjetoCG.obj : error LNK2005: "int brassCoef" (?brassCoef@@3HA) already defined in materials.obj
+ProjetoCG.obj : error LNK2005: "float * turquoiseAmb" (?turquoiseAmb@@3PAMA) already defined in materials.obj
+ProjetoCG.obj : error LNK2005: "float * silverSpec" (?silverSpec@@3PAMA) already defined in materials.obj
+ProjetoCG.obj : error LNK2005: "float * jadeSpec" (?jadeSpec@@3PAMA) already defined in materials.obj
+ProjetoCG.obj : error LNK2005: "float * pearlDif" (?pearlDif@@3PAMA) already defined in materials.obj
+ProjetoCG.obj : error LNK2005: "float * greenPlasticDif" (?greenPlasticDif@@3PAMA) already defined in materials.obj
+ProjetoCG.obj : error LNK2005: "int yellowPlasticCoef" (?yellowPlasticCoef@@3HA) already defined in materials.obj
+ProjetoCG.obj : error LNK2005: "float * pearlAmb" (?pearlAmb@@3PAMA) already defined in materials.obj
+ProjetoCG.obj : error LNK2005: "float * whitePlasticSpec" (?whitePlasticSpec@@3PAMA) already defined in materials.obj
+ProjetoCG.obj : error LNK2005: "float * greenPlasticSpec" (?greenPlasticSpec@@3PAMA) already defined in materials.obj
+ProjetoCG.obj : error LNK2005: "int pearlCoef" (?pearlCoef@@3HA) already defined in materials.obj
+ProjetoCG.obj : error LNK2005: "float * chromeAmb" (?chromeAmb@@3PAMA) already defined in materials.obj
+ProjetoCG.obj : error LNK2005: "int blackPlasticCoef" (?blackPlasticCoef@@3HA) already defined in materials.obj
+ProjetoCG.obj : error LNK2005: "float * turquoiseSpec" (?turquoiseSpec@@3PAMA) already defined in materials.obj
+ProjetoCG.obj : error LNK2005: "float * goldSpec" (?goldSpec@@3PAMA) already defined in materials.obj
+ProjetoCG.obj : error LNK2005: "float * obsidianDif" (?obsidianDif@@3PAMA) already defined in materials.obj
+ProjetoCG.obj : error LNK2005: "int redPlasticCoef" (?redPlasticCoef@@3HA) already defined in materials.obj
+ProjetoCG.obj : error LNK2005: "float * cyanPlasticDif" (?cyanPlasticDif@@3PAMA) already defined in materials.obj
+ProjetoCG.obj : error LNK2005: "int goldCoef" (?goldCoef@@3HA) already defined in materials.obj
+ProjetoCG.obj : error LNK2005: "float * brassSpec" (?brassSpec@@3PAMA) already defined in materials.obj
+ProjetoCG.obj : error LNK2005: "float * bronzeDif" (?bronzeDif@@3PAMA) already defined in materials.obj
+ProjetoCG.obj : error LNK2005: "int silverCoef" (?silverCoef@@3HA) already defined in materials.obj
+ProjetoCG.obj : error LNK2005: "float * blackPlasticDif" (?blackPlasticDif@@3PAMA) already defined in materials.obj
+ProjetoCG.obj : error LNK2005: "float * redPlasticDif" (?redPlasticDif@@3PAMA) already defined in materials.obj
+ProjetoCG.obj : error LNK2005: "float * goldDif" (?goldDif@@3PAMA) already defined in materials.obj
+ProjetoCG.obj : error LNK2005: "float * esmeraldDif" (?esmeraldDif@@3PAMA) already defined in materials.obj
+ProjetoCG.obj : error LNK2005: "float * copperSpec" (?copperSpec@@3PAMA) already defined in materials.obj
+ProjetoCG.obj : error LNK2005: "float * turquoiseDif" (?turquoiseDif@@3PAMA) already defined in materials.obj
+ProjetoCG.obj : error LNK2005: "float * bronzeAmb" (?bronzeAmb@@3PAMA) already defined in materials.obj
+ProjetoCG.obj : error LNK2005: "float * rubyDif" (?rubyDif@@3PAMA) already defined in materials.obj
+ProjetoCG.obj : error LNK2005: "int obsidianCoef" (?obsidianCoef@@3HA) already defined in materials.obj
+ProjetoCG.obj : error LNK2005: "float * redPlasticSpec" (?redPlasticSpec@@3PAMA) already defined in materials.obj
+ProjetoCG.obj : error LNK2005: "float * yellowPlasticAmb" (?yellowPlasticAmb@@3PAMA) already defined in materials.obj
+ProjetoCG.obj : error LNK2005: "float * rubySpec" (?rubySpec@@3PAMA) already defined in materials.obj
+ProjetoCG.obj : error LNK2005: "int jadeCoef" (?jadeCoef@@3HA) already defined in materials.obj
+ProjetoCG.obj : error LNK2005: "float * jadeDif" (?jadeDif@@3PAMA) already defined in materials.obj
+ProjetoCG.obj : error LNK2005: "int turquoiseCoef" (?turquoiseCoef@@3HA) already defined in materials.obj
+ProjetoCG.obj : error LNK2005: "int cyanPlasticCoef" (?cyanPlasticCoef@@3HA) already defined in materials.obj
+ProjetoCG.obj : error LNK2005: "float * greenPlasticAmb" (?greenPlasticAmb@@3PAMA) already defined in materials.obj
+ProjetoCG.obj : error LNK2005: "float * obsidianSpec" (?obsidianSpec@@3PAMA) already defined in materials.obj
+ProjetoCG.obj : error LNK2005: "float * whitePlasticDif" (?whitePlasticDif@@3PAMA) already defined in materials.obj
+ProjetoCG.obj : error LNK2005: "int copperCoef" (?copperCoef@@3HA) already defined in materials.obj
+ProjetoCG.obj : error LNK2005: "float * esmeraldSpec" (?esmeraldSpec@@3PAMA) already defined in materials.obj
+ProjetoCG.obj : error LNK2005: "int whitePlasticCoef" (?whitePlasticCoef@@3HA) already defined in materials.obj
+ProjetoCG.obj : error LNK2005: "float * brassAmb" (?brassAmb@@3PAMA) already defined in materials.obj
+ProjetoCG.obj : error LNK2005: "int chromeCoef" (?chromeCoef@@3HA) already defined in materials.obj
+ProjetoCG.obj : error LNK2005: "int bronzeCoef" (?bronzeCoef@@3HA) already defined in materials.obj
+C:\Users\tferr\Desktop\CG\ProjetoCG\Release\ProjetoCG.exe : fatal error LNK1169: one or more multiply defined symbols found
