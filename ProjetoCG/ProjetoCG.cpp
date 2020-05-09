@@ -25,6 +25,7 @@ GLfloat distZ = 3;
 GLfloat altPernas = 1;
 GLfloat altTampo = 0.001;
 
+// -------------------------------------------------------------- Vertex array - Pernas
 static GLfloat verticesPernas[] = {
 	//�������������������������������������� x=tam (Esquerda)
 		-tam,  0,  tam,	// 0 
@@ -60,7 +61,7 @@ static GLfloat normaisPernas[] = {
 		0.0,  1.0,  0.0,
 		0.0,  1.0,  0.0,
 };
-//------------------------------------------------------------ Cores
+
 static GLfloat corPernas[] = {
 	//…………………………………………………………………………………………………… x=tam (Esquerda) - Red
 	  1.0,  0.0, 0.0,	// 0 
@@ -79,6 +80,11 @@ static GLfloat corPernas[] = {
 	  1.0,  0.0, 1.0,	// 11 
 };
 
+static GLfloat arrayTexturePernas[] = {
+0,0, 1,0, 1,1, 0,1, 0,0, 1,0, 1,1, 0,1, 0,0, 1,0, 1,1, 0,1, 0,0, 1,0, 1,1, 0,1, 0,0, 1,0, 1,1, 0,1, 0,0, 1,0, 1,1, 0,1, 0,0, 1,0, 1,1, 0,1, 0,0, 1,0, 1,1, 0,1,  0,0, 1,0, 1,1, 0,1, 0,0, 1,0, 1,1, 0,1, 0,0, 1,0, 1,1, 0,1, 0,0, 1,0, 1,1, 0,1, 0,0, 1,0, 1,1, 0,1
+};
+
+// -------------------------------------------------------------- Vertex array - Tampo
 static GLfloat verticesTampo[] = {
 	//…………………………………………………………………………………………………… x=tam (Esquerda)
 		-tam,  -tam,  tam,	// 0 
@@ -114,7 +120,7 @@ static GLfloat normaisTampo[] = {
 		 0.0,  1.0,  0.0,
 		 0.0,  1.0,  0.0,
 };
-//------------------------------------------------------------ Cores
+
 static GLfloat corTampo[] = {
 	//…………………………………………………………………………………………………… x=tam (Esquerda) - Red
 	  1.0,  0.0, 0.0,	// 0 
@@ -133,9 +139,14 @@ static GLfloat corTampo[] = {
 	  1.0,  0.0, 1.0,	// 11 
 };
 
-//=========================================================== FACES DA MESA
+static GLfloat arrayTextureTampo[] = {
+0,0, 1,0, 1,1, 0,1, 0,0, 1,0, 1,1, 0,1, 0,0, 1,0, 1,1, 0,1, 0,0, 1,0, 1,1, 0,1, 0,0, 1,0, 1,1, 0,1, 0,0, 1,0, 1,1, 0,1, 0,0, 1,0, 1,1, 0,1, 0,0, 1,0, 1,1, 0,1,  0,0, 1,0, 1,1, 0,1, 0,0, 1,0, 1,1, 0,1, 0,0, 1,0, 1,1, 0,1, 0,0, 1,0, 1,1, 0,1, 0,0, 1,0, 1,1, 0,1
+};
+
+// -------------------------------------------------------------- Faces visíveis
 GLboolean frenteVisivel = 1;
 
+// -------------------------------------------------------------- Faces das Pernas
 static GLuint cimaPernas[] = {8, 11, 10, 9};   // regra da mao direita
 static GLuint esqPernas[] = {0, 1, 2, 3};
 static GLuint dirPernas[] = {4, 7, 6, 5};
@@ -143,6 +154,7 @@ static GLuint baixoPernas[] = {0, 3, 7, 4};
 static GLuint frentePernas[] = {1, 0, 4, 5};
 static GLuint trasPernas[] = {3, 2, 6, 7};
 
+// -------------------------------------------------------------- Faces do Tampo
 static GLuint cimaTampo[] = { 8, 11, 10, 9 };   // regra da mao direita
 static GLuint esqTampo[] = { 0, 1, 2, 3 };
 static GLuint dirTampo[] = { 4, 7, 6, 5 };
@@ -163,6 +175,8 @@ GLfloat  translateX[] = { 0, 0, 0 };
 GLfloat  rotateTudo[] = {0, 0, 1, 0};
 GLfloat  angPersp = 90;
 GLfloat  incZoom = 3;
+
+// -------------------------------------------------------------- Animação
 GLint   msec = 20;						//.. definicao do timer (actualizacao)
 GLboolean  anim = false;
 GLfloat angAnimEsq = 0;
@@ -170,7 +184,9 @@ GLfloat angAnimDir = 0;
 GLint incrementDir = 2;
 GLint incrementEsq = -2;
 GLfloat incrementX = 0.02;
-GLUquadricObj* bola = gluNewQuadric();		// Skybox
+
+// -------------------------------------------------------------- Skybox
+GLUquadricObj* bola = gluNewQuadric();
 
 // -------------------------------------------------------------- Materiais
 int material = 15;
@@ -264,7 +280,7 @@ GLfloat yellowPlasticDif[] = { 0.5 ,0.5 ,0.0 };
 GLfloat yellowPlasticSpec[] = { 0.60 ,0.60 ,0.50 };
 GLint yellowPlasticCoef = 0.25 * 128;
 
-// -------------------------------------------------------------- Texturas
+// -------------------------------------------------------------- Transparências
 GLint transparencia = 0;
 
 // -------------------------------------------------------------- Texturas
@@ -300,6 +316,10 @@ GLfloat focoCut = 20.0;	// Angulo
 GLfloat focoCorDif[4] = { 0.9, 0.9, 0.9, 1.0 };
 GLfloat focoCorEsp[4] = { 1.0, 1.0, 1.0, 1.0 };
 
+// -------------------------------------------------------------- Malha
+GLint toggle_malha = 0;
+GLint malha = 128;
+
 
 
 //================================================================================
@@ -322,7 +342,7 @@ void initTexturas()
 
 	glGenTextures(1, &texture[1]);
 	glBindTexture(GL_TEXTURE_2D, texture[1]);
-	imag.LoadBmpFile("bola.bmp");
+	imag.LoadBmpFile("skybox4.bmp");
 	glTexEnvf(GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_MODULATE);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
@@ -484,34 +504,11 @@ void inicializa(void){
 	glCullFace(GL_BACK);		//………………………………………………………………………………Mostrar so as da frente*/
 }
 
-
-
-void drawEixos()
-{
-	initMaterials(16);
-	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Eixo X
-	glColor4f(RED);
-	glBegin(GL_LINES);
-		glVertex3i(0, 0, 0);
-		glVertex3i(10, 0, 0);
-	glEnd();
-	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Eixo Y
-	glColor4f(GREEN);
-	glBegin(GL_LINES);
-		glVertex3i(0, 0, 0);
-		glVertex3i(0, 10, 0);
-	glEnd();
-	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Eixo Z
-	glColor4f(BLUE);
-	glBegin(GL_LINES);
-		glVertex3i(0, 0, 0);
-		glVertex3i(0, 0, 10);
-	glEnd();
-
-}
-
+// Desenha uma perna da mesa
 void desenhaPerna(int i) {
-	initMaterials(material);
+	initMaterials(22);
+	glEnable(GL_TEXTURE_2D);
+	glBindTexture(GL_TEXTURE_2D, texture[0]);
 	GLfloat aux;
 	GLfloat translatePernas[] = { 0, 0, 0 };
 	GLfloat translateAnim[] = {0, 0, 0};
@@ -679,10 +676,14 @@ void desenhaPerna(int i) {
 		glTranslatef(translatePernas[0], translatePernas[1], translatePernas[2]);
 		glDrawElements(GL_POLYGON, 4, GL_UNSIGNED_INT, dirPernas);
 	glPopMatrix();
+	glDisable(GL_TEXTURE_2D);
 }
 
+// Desenha o tampo da mesa
 void desenhaTampo() {
-	initMaterials(material);
+	glEnable(GL_TEXTURE_2D);
+	glBindTexture(GL_TEXTURE_2D, texture[0]);
+	initMaterials(22);
 	GLfloat  translatePernas[] = { 0, altPernas + 0.5, distZ };
 
 	if (anim) {
@@ -774,152 +775,130 @@ void desenhaTampo() {
 		glTranslatef(translatePernas[0], translatePernas[1], translatePernas[2]);
 		glDrawElements(GL_POLYGON, 4, GL_UNSIGNED_INT, dirTampo);
 	glPopMatrix();
-}
-
-void drawMesa() {
-	initMaterials(material);
-	//=================================================== Qual o lado visivel ???
-	if (frenteVisivel)
-		glCullFace(GL_BACK);  //.. o de tras é eliminado
-	else
-		glCullFace(GL_FRONT);  //.. o de frente é eliminado
-
-	glVertexPointer(3, GL_FLOAT, 0, verticesPernas); //………………………………………VertexArrays: vertices + normais + cores
-	glEnableClientState(GL_VERTEX_ARRAY);
-	glNormalPointer(GL_FLOAT, 0, normaisPernas);
-	glEnableClientState(GL_NORMAL_ARRAY);
-	glColorPointer(3, GL_FLOAT, 0, corPernas);
-	glEnableClientState(GL_COLOR_ARRAY);
-
-	glPushMatrix();
-		for (int i = 0; i < 4; i++) {
-			desenhaPerna(i);
-		}
-	glPopMatrix();
-
-	glVertexPointer(3, GL_FLOAT, 0, verticesTampo); //………………………………………VertexArrays: vertices + normais + cores
-	glEnableClientState(GL_VERTEX_ARRAY);
-	glNormalPointer(GL_FLOAT, 0, normaisTampo);
-	glEnableClientState(GL_NORMAL_ARRAY);
-	glColorPointer(3, GL_FLOAT, 0, corTampo);
-	glEnableClientState(GL_COLOR_ARRAY);
-
-	glPushMatrix();
-		desenhaTampo();
-	glPopMatrix();
-}
-
-void drawChao() {
-	int inc = 0.1;
-	int inicio_menor_x = -xC, inicio_menor_y = -xC;
-	initMaterials(22);
-	//if (transparencia) {
-		glEnable(GL_BLEND);	//………………………………………………………………………………Transparencia
-		glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
-		glEnable(GL_TEXTURE_2D);
-		glBindTexture(GL_TEXTURE_2D, texture[0]);
-		glNormal3f(0, 1, 0);
-		glPushMatrix();
-			glTranslatef(4, 0, 0);
-			for (int i = 0; i < xC / inc; i++) {
-				for (int j = 0; j < xC / inc; j++) {
-					glBegin(GL_QUADS);
-					glTexCoord2f(0.0f, 0.0f);  	 glVertex3i(inicio_menor_x, 0, inicio_menor_y);
-					glTexCoord2f(1.0f, 0.0f); 	 glVertex3i(inicio_menor_x, 0, inicio_menor_y + inc);
-					glTexCoord2f(1.0f, 1.0f);    glVertex3i(inicio_menor_x + inc, 0, inicio_menor_y + inc);
-					glTexCoord2f(0.0f, 1.0f);    glVertex3i(inicio_menor_x + inc, 0, inicio_menor_y);
-					glEnd();
-					inicio_menor_y += inc;
-				}
-				inicio_menor_y = -xC;
-				inicio_menor_x += inc;
-			}
-		glPopMatrix();
-		glDisable(GL_TEXTURE_2D);
-		glDisable(GL_BLEND);
-	/*}
-	else {
-		glEnable(GL_TEXTURE_2D);
-		glBindTexture(GL_TEXTURE_2D, texture[0]);
-		glNormal3f(0, 1, 0);
-		glPushMatrix();
-			glTranslatef(4, 0, 0);
-			glBegin(GL_QUADS);
-				glTexCoord2f(0.0f, 0.0f);  	 glVertex3i(-xC, 0, -xC);
-				glTexCoord2f(1.0f, 0.0f); 	 glVertex3i(-xC, 0, xC);
-				glTexCoord2f(1.0f, 1.0f);    glVertex3i(xC, 0, xC);
-				glTexCoord2f(0.0f, 1.0f);    glVertex3i(xC, 0, -xC);
-			glEnd();
-		glPopMatrix();
-		glDisable(GL_TEXTURE_2D);
-	}*/
-}
-
-void drawParedes() {
-	glLightModeli(GL_LIGHT_MODEL_TWO_SIDE, GL_TRUE);
-	initMaterials(16);
-	glEnable(GL_TEXTURE_2D);
-	glBindTexture(GL_TEXTURE_2D, texture[0]);
-	for (int i = 0; i < 4; i++){
-		if (i == 0) {
-			glPushMatrix();
-				glTranslatef(4, xC, -xC);
-				glRotatef(90, 1, 0, 0);
-				glBegin(GL_QUADS);
-					glTexCoord2f(0.0f, 0.0f);  		glVertex3i(-xC, 0, -xC);
-					glTexCoord2f(1.0, 0.0); 		glVertex3i(-xC, 0, xC);
-					glTexCoord2f(1.0, 1.0);			glVertex3i(xC, 0, xC);
-					glTexCoord2f(0.0, 1.0);			glVertex3i(xC, 0, -xC);
-				glEnd();
-			glPopMatrix();
-		}
-		if (i == 1) {
-			glPushMatrix();
-				glTranslatef(4, xC, xC);
-				glRotatef(-90, 1, 0, 0);
-				glBegin(GL_QUADS);
-					glTexCoord2f(0.0f, 0.0f);  		glVertex3i(-xC, 0, -xC);
-					glTexCoord2f(1.0, 0.0); 		glVertex3i(-xC, 0, xC);
-					glTexCoord2f(1.0, 1.0);			glVertex3i(xC, 0, xC);
-					glTexCoord2f(0.0, 1.0);			glVertex3i(xC, 0, -xC);
-				glEnd();
-			glPopMatrix();
-		}
-		if (i == 2) {
-			glPushMatrix();
-				glTranslatef(4-xC, xC, 0);
-				glRotatef(-90, 0, 0, 1);
-				glBegin(GL_QUADS);
-					glTexCoord2f(0.0f, 0.0f);  		glVertex3i(-xC, 0, -xC);
-					glTexCoord2f(1.0, 0.0); 		glVertex3i(-xC, 0, xC);
-					glTexCoord2f(1.0, 1.0);			glVertex3i(xC, 0, xC);
-					glTexCoord2f(0.0, 1.0);			glVertex3i(xC, 0, -xC);
-				glEnd();
-			glPopMatrix();
-		}
-		if (i == 3) {
-			glPushMatrix();
-				glTranslatef(4+xC, xC, 0);
-				glRotatef(90, 0, 0, 1);
-				glBegin(GL_QUADS);
-					glTexCoord2f(0.0f, 0.0f);  		glVertex3i(-xC, 0, -xC);
-					glTexCoord2f(1.0, 0.0); 		glVertex3i(-xC, 0, xC);
-					glTexCoord2f(1.0, 1.0);			glVertex3i(xC, 0, xC);
-					glTexCoord2f(0.0, 1.0);			glVertex3i(xC, 0, -xC);
-				glEnd();
-			glPopMatrix();
-		}
-	}
 	glDisable(GL_TEXTURE_2D);
 }
 
+// Desenha a mesa
+void drawMesa() {
+	initMaterials(22);
+	if (transparencia) {
+		//=================================================== Qual o lado visivel ???
+		if (frenteVisivel)
+			glCullFace(GL_BACK);  //.. o de tras é eliminado
+		else
+			glCullFace(GL_FRONT);  //.. o de frente é eliminado
+
+		glEnable(GL_BLEND);	//………………………………………………………………………………Transparencia
+		glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+
+		glVertexPointer(3, GL_FLOAT, 0, verticesPernas); //………………………………………VertexArrays: vertices + normais + cores
+		glEnableClientState(GL_VERTEX_ARRAY);
+		glNormalPointer(GL_FLOAT, 0, normaisPernas);
+		glEnableClientState(GL_NORMAL_ARRAY);
+		glColorPointer(3, GL_FLOAT, 0, corPernas);
+		glEnableClientState(GL_COLOR_ARRAY);
+		glTexCoordPointer(2, GL_FLOAT, 0, arrayTexturePernas);
+		glEnableClientState(GL_TEXTURE_COORD_ARRAY);
+
+		glPushMatrix();
+			for (int i = 0; i < 4; i++) {
+				desenhaPerna(i);
+			}
+		glPopMatrix();
+
+		glVertexPointer(3, GL_FLOAT, 0, verticesTampo); //………………………………………VertexArrays: vertices + normais + cores
+		glEnableClientState(GL_VERTEX_ARRAY);
+		glNormalPointer(GL_FLOAT, 0, normaisTampo);
+		glEnableClientState(GL_NORMAL_ARRAY);
+		glColorPointer(3, GL_FLOAT, 0, corTampo);
+		glEnableClientState(GL_COLOR_ARRAY);
+		glTexCoordPointer(2, GL_FLOAT, 0, arrayTextureTampo);
+		glEnableClientState(GL_TEXTURE_COORD_ARRAY);
+
+		glPushMatrix();
+			desenhaTampo();
+		glPopMatrix();
+		glDisable(GL_BLEND);	//………………………………………………………………………………Transparencia
+	}
+	else {
+		//=================================================== Qual o lado visivel ???
+		if (frenteVisivel)
+			glCullFace(GL_BACK);  //.. o de tras é eliminado
+		else
+			glCullFace(GL_FRONT);  //.. o de frente é eliminado
+
+		glVertexPointer(3, GL_FLOAT, 0, verticesPernas); //………………………………………VertexArrays: vertices + normais + cores
+		glEnableClientState(GL_VERTEX_ARRAY);
+		glNormalPointer(GL_FLOAT, 0, normaisPernas);
+		glEnableClientState(GL_NORMAL_ARRAY);
+		glColorPointer(3, GL_FLOAT, 0, corPernas);
+		glEnableClientState(GL_COLOR_ARRAY);
+		glTexCoordPointer(2, GL_FLOAT, 0, arrayTexturePernas);
+		glEnableClientState(GL_TEXTURE_COORD_ARRAY);
+
+		glPushMatrix();
+			for (int i = 0; i < 4; i++) {
+				desenhaPerna(i);
+			}
+		glPopMatrix();
+
+		glVertexPointer(3, GL_FLOAT, 0, verticesTampo); //………………………………………VertexArrays: vertices + normais + cores
+		glEnableClientState(GL_VERTEX_ARRAY);
+		glNormalPointer(GL_FLOAT, 0, normaisTampo);
+		glEnableClientState(GL_NORMAL_ARRAY);
+		glColorPointer(3, GL_FLOAT, 0, corTampo);
+		glEnableClientState(GL_COLOR_ARRAY);
+		glTexCoordPointer(2, GL_FLOAT, 0, arrayTextureTampo);
+		glEnableClientState(GL_TEXTURE_COORD_ARRAY);
+
+		glPushMatrix();
+			desenhaTampo();
+		glPopMatrix();
+	}
+}
+
+// Desenha o chão
+void drawChao() {
+	initMaterials(material);
+	glNormal3f(0, 1, 0);
+	if (toggle_malha) {
+		GLfloat loop = (xC * 2) / malha;
+		glPushMatrix();
+		glTranslatef(4, 0, 0);
+		for (int i = 0; i < malha; i++) {
+			for (int j = 0; j < malha; j++) {
+				glBegin(GL_QUADS);
+					glVertex3f(-xC + (j * loop), 0, -xC + (i * loop));
+					glVertex3f(-xC + (j * loop) + loop, 0, -xC + (i * loop));
+					glVertex3f(-xC + (j * loop) + loop, 0, -xC + (i * loop) + loop);
+					glVertex3f(-xC + (j * loop), 0, -xC + (i * loop) + loop);
+				glEnd();
+			}
+		}
+		glPopMatrix();
+	}
+	else {
+		glPushMatrix();
+		glTranslatef(4, 0, 0);
+		glBegin(GL_QUADS);
+			glVertex3f(-xC, 0, -xC);
+			glVertex3f(-xC, 0, xC);
+			glVertex3f(xC, 0, xC);
+			glVertex3f(xC, 0, -xC);
+		glEnd();
+		glPopMatrix();
+	}
+}
+
+// Desenha a Skybox
 void drawSkyBox(){
 	initMaterials(22);
-	//glLightModeli(GL_LIGHT_MODEL_TWO_SIDE, GL_TRUE);
 	//------------------------- Skybox
 	glEnable(GL_TEXTURE_2D);
 		glBindTexture(GL_TEXTURE_2D, texture[1]);
 		glPushMatrix();
+			glRotatef(180, 0, 0, 1);
+			glRotatef(-90, 1, 0, 0);
 			glTranslatef(2, 4, 2);
 			gluQuadricDrawStyle(bola, GLU_FILL);
 			gluQuadricNormals(bola, GLU_SMOOTH);
@@ -929,6 +908,7 @@ void drawSkyBox(){
 	glDisable(GL_TEXTURE_2D);
 }
 
+// Toggle da luz do teto (pontual) e focos
 void iluminacao() {
 	if (luzTeto)		glEnable(GL_LIGHT0);
 	else				glDisable(GL_LIGHT0);
@@ -955,9 +935,7 @@ void display(void) {
 	   
 
 	//…………………………………………………………………………………………………………………………………………………………Objectos
-	//drawEixos();
 	iluminacao();
-	//drawParedes();
 	drawSkyBox();
 	drawChao();
 	drawMesa();
@@ -966,23 +944,14 @@ void display(void) {
 	glutSwapBuffers();
 }
 
+// Atualiza a visão (do foco também)
 void updateVisao() {
 	obsPfin[0] = obsPini[0] + rVisao * cos(aVisao);
 	obsPfin[2] = obsPini[2] - rVisao * sin(aVisao);
-
-	/*focoPini[0] = obsPini[0];
-	focoPini[2] = obsPini[2];
-	focoPfin[0] = focoPini[0] - rFoco * cos(aFoco + incH);
-	focoPfin[2] = focoPini[2] - rFoco * sin(aFoco + incH);
-	focoPini[1] = obsPini[1];
-	focoPini[2] = obsPini[2];
-	focoDir[0] = focoPfin[0] - focoPini[0];
-	focoDir[1] = incV;
-	focoDir[2] = focoPfin[2] - focoPini[2];*/
-
 	glutPostRedisplay();
 }
 
+// Atualiza a luz do teto (pontual)
 void updateLuz() {
 	localCorAmb[0] = luzR * intensidadeT;
 	localCorAmb[1] = luzG * intensidadeT;
@@ -1076,6 +1045,12 @@ void keyboard(unsigned char key, int x, int y) {
 		glutPostRedisplay();
 		break;
 
+	case 'l':
+	case 'L':
+		toggle_malha = !transparencia;
+		glutPostRedisplay();
+		break;
+
 	// --------------------------------------------- Luz Ambiente
 	case 'd':
 	case 'D':
@@ -1087,7 +1062,7 @@ void keyboard(unsigned char key, int x, int y) {
 		glutPostRedisplay();
 		break;
 
-	// --------------------------------------------- Luz Teto
+	// --------------------------------------------- Luz Teto (pontual)
 	// Liga e desliga
 	case 't':
 	case 'T':
@@ -1155,7 +1130,7 @@ void teclasNotAscii(int key, int x, int y) {
 	updateVisao();
 }
 
-
+// Timer da animação
 void Timer(int value)
 {
 	glutPostRedisplay();
@@ -1163,14 +1138,13 @@ void Timer(int value)
 }
 
 //======================================================= MAIN
-//======================================================= MAIN
 int main(int argc, char** argv) {
 
 	glutInit(&argc, argv);
 	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH);
 	glutInitWindowSize(wScreen, hScreen);
 	glutInitWindowPosition(300, 50);
-	glutCreateWindow("SETAS/Q/A/W/S: Observador | E: Animacao | Z/XO/P: Mesa | F: Frente vis | D: Luz ambiente | T/I/R/G/B: Luz teto");
+	glutCreateWindow("SETAS/Q/A/W/S: Observador | E: Animacao | Z/X/O/P: Mesa | D: Luz ambiente | T/I/R/G/B: Luz teto | F: Foco | M: Materiais | K: Transparência");
 
 	inicializa();
 
